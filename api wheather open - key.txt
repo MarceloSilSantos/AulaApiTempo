@@ -1,0 +1,45 @@
+key openwheather
+
+user email tecmarcelo78@outlook.com
+
+key:
+6b754e23fe158f87a4fd15c392fcbba9
+
+
+teacher key: 777fd6c175f16899b669ab9b22be7638
+
+https://api.openweathermap.org/data/2.5/weather?q=São Paulo&lang=pt_br&appid={777fd6c175f16899b669ab9b22be7638}&units=metric
+
+http://api.openweathermap.org/data/2.5/forecast?id=524901&appid={777fd6c175f16899b669ab9b22be7638}
+
+
+alert("teste");
+const chave = '777fd6c175f16899b669ab9b22be7638'
+const url = `https://api.openweathermap.org/data/2.5/weather?q=Osasco&lang=pt_br&appid=${chave}&units=metric`
+
+var cidade = document.getElementById("cidade").value;
+
+function temperatura () {
+
+    window.location.replace("https://api.openweathermap.org/data/2.5/weather?q=Osasco&lang=pt_br&appid=${fe158f87a4fd15c392fcbba9}&units=metric`");
+
+    
+
+
+  const obterTemp = () =>{
+
+  fetch(url)
+        .then(resposta =>{
+          // console.log(resposta)
+          return resposta.json()
+        })
+          .then(dados =>{
+            console.log(dados)
+          })
+          .catch(erro => {
+            console.log(erro)
+          })
+        }           
+
+      
+             
